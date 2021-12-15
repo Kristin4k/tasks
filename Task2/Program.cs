@@ -11,14 +11,12 @@ namespace Task2
         static void Main(string[] args)
         {
             Console.WriteLine("Введите радиус окружности");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите гипотенузу");
-            int b = Convert.ToInt32(Console.ReadLine());
-            int x = 4 * a * 2;
-            int k = a * (a + b);
-            Console.WriteLine("Площадь вписанного квадрата в окружность " + x);
-            Console.WriteLine("Площадь вписанного правильного треугольнака в окружность " + k);
+            var radius = double.Parse(Console.ReadLine());
+            var AreaOfSquare = 2 * Math.Pow(radius, 2);
+            var AreaOfEquilateralTringle = 3 * Math.Sqrt(3) * Math.Pow(radius, 2) / 4;
 
+            Console.WriteLine("Площадь вписанного квадрата в окружность " + AreaOfSquare);
+            Console.WriteLine("Площадь вписанного правильного треугольнака в окружность " + AreaOfEquilateralTringle);
 
             Console.ReadKey();
         }

@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task5._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите слово чемодан");
+
+            string text = "чемодан";
+            text = text.Trim();
+            text = text.Trim(new char[] { 'ч' });
+        }
+        
+                
+        
+    }
+}
