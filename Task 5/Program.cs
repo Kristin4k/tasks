@@ -16,7 +16,6 @@ namespace Task_5
             Console.WriteLine("Введите текст на английском языке");
             var input = Console.ReadLine();
 
-
             for (var i = 0; i < englishLetters.Length; i++)
                 input = input.Replace(englishLetters[i], leet[i]);
 
