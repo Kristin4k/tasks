@@ -28,7 +28,6 @@ namespace Task5._1
          
             Console.WriteLine("Первое слово: " + result);
             Console.WriteLine("Второе слово: " + result2);
-
             Console.ReadKey();
         }
     }
