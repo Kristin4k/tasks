@@ -22,8 +22,7 @@ namespace Task5._1
 
             string result2 = str.Substring(4, 1)
                 + str.Substring(1, 1)
-                + str.Substring(2, 1)
-                + str.Substring(3, 1)
+                + str.Substring(2, 2)
                 + str.Substring(6, 1);
          
             Console.WriteLine("Первое слово: " + result);
