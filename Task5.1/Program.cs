@@ -10,19 +10,24 @@ namespace Task5._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("получить производные слова от чемодан");
+            Console.WriteLine("получить производные слова от слова чемодан");
             Console.ReadLine();
-            string s1 = "ч";
-            string s2 = "е";
-            string s3 = "м";
-            string s4 = "о";
-            string s5 = "д";
-            string s6 = "а";
-            string s7 = "н";
-            string word1 = s5 + s2 + s3 + s4 + s7;
-            string word2 = s3 + s2 + s1;
-            Console.WriteLine(word1);
-            Console.WriteLine(word2);
+
+            string str = "";
+            str = "Чемодан";
+
+            string result = str.Substring(2, 1)
+            + str.Substring(1, 1)
+            + str.Substring(0, 1).ToLower();
+
+            string result2 = str.Substring(4, 1)
+                + str.Substring(1, 1)
+                + str.Substring(2, 1)
+                + str.Substring(3, 1)
+                + str.Substring(6, 1);
+         
+            Console.WriteLine("Первое слово: " + result);
+            Console.WriteLine("Второе слово: " + result2);
             Console.ReadKey();
         }
     }
