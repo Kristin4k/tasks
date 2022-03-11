@@ -23,8 +23,8 @@ namespace Exam28
         }
         static int L(char[] s) 
         {
-            int maxCount = 0;
-            int count = 0;
+            int maxCount = 1;
+            int count = 1;
             for (int e = 1; e < s.Length; e++)
             {
                 if (s[e] == s[e - 1])
@@ -37,7 +37,7 @@ namespace Exam28
                     {
                         maxCount = count;
                     }
-                    count = 0;
+                    count = 1;
                 }
             }
             return maxCount;
