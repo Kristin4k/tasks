@@ -13,7 +13,7 @@ namespace Exam28
             int maxNum = Convert.ToInt32("11111111111111111111111111111111", 2);
             int num = 0;
             int summ = 0;
-            while (num <= maxNum)
+            while (num >= maxNum)
             {
                 summ = summ + L(IntToS(num));
                 num++;
@@ -21,7 +21,7 @@ namespace Exam28
             Console.WriteLine(summ);
             Console.ReadKey();
         }
-        static int L(char[] s)
+        static int L(char[] s) 
         {
             int maxCount = 0;
             int count = 0;
